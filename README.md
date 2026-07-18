@@ -5,8 +5,10 @@ High-performance C++20 foundation for the RTHMN multi-scale market engine.
 The core maintains the canonical 67-level geometric price-box ladder and
 per-level gradient/pivot state in fixed `std::array` storage. Processing an
 observed quote performs no heap allocation. This repository is intentionally
-calculation and replay only: it has no broker, network, credential, or order
-execution code.
+calculation and replay only: it has no broker, network, credential, or live
+order execution code. It does include a fail-closed paper trade lifecycle:
+signal/event JSONL records, risk-sized paper fills, duplicate swing locks,
+open-trade excursion tracking, and deterministic stop/target closure.
 
 ## Build
 

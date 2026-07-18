@@ -1,6 +1,6 @@
 CXX ?= clang++
-CXXFLAGS := -std=c++20 -O3 -DNDEBUG -flto -Wall -Wextra -Wpedantic -Iinclude
-TEST_CXXFLAGS := -std=c++20 -O2 -Wall -Wextra -Wpedantic -Iinclude
+CXXFLAGS := -std=c++20 -O3 -DNDEBUG -flto -Wall -Wpedantic -Iinclude
+TEST_CXXFLAGS := -std=c++20 -O2 -Wall -Wpedantic -Iinclude
 BIN_DIR := build
 CORE := src/x.cpp
 
